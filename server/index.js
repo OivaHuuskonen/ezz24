@@ -20,8 +20,8 @@ mongoose
   .catch((err) => console.log("DB ERROR => ", err));
 
 // middlewares
-app.use(express.static(path.join(__dirname, 'build')));
-//app.use(express.static('bulid'));
+//app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static('bulid'));
 app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
@@ -31,8 +31,8 @@ app.use("/api", authRoutes);
 app.use("/api", categoryRoutes);
 app.use("/api", productRoutes);
 
-const port = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 
-app.listen(port, () => {
-  console.log(`Node server is running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Node server is running on port ${PORT}`);
 });
