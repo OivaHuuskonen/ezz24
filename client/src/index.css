@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Special+Elite&family=Yeseva+One&display=swap');
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: 'Yeseva One', cursive;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yeseva One', serif;
+}
+
+.yeseva-one-regular button {
+  font-family: "Yeseva One", serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+/*}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.merienda-<uniquifier> {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+*/
+
+
+
+
+.active {
+  text-decoration: underline !important;
+  text-decoration-thickness: 5px !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.card-button {
+  border-radius: 0px;
+}
+
+.hoverable:hover {
+  border-right: 5px solid #0d6efd;
+  border-bottom: 5px solid #0d6efd;
+  border-radius: 12px;
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.form-control {
+  -webkit-box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+/* jumbotron animation color css */
+.jumbotron {
+  width: 30wh;
+  height: 30vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
