@@ -18,6 +18,8 @@ mongoose
   .catch((err) => console.log("DB ERROR => ", err));
 
 // middlewares
+app.use(express.static(path.join(__dirname, 'build')));
+//app.use(express.static('bulid'));
 app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
