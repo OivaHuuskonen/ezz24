@@ -7,8 +7,9 @@ import categoryRoutes from "./routes/category.js";
 import productRoutes from "./routes/product.js";
 import cors from "cors";
 import path from 'path';
+import { config } from "dotenv";
 
-dotenv.config();
+config();
 
 const app = express();
 
