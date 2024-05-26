@@ -8,8 +8,8 @@ import sgMail from "@sendgrid/mail";
 
 dotenv.config();
 
-console.log("SendGrid Key:", process.env.SENDGRID_KEY);
-console.log("Email From:", process.env.EMAIL_FROM);
+//console.log("SendGrid Key:", process.env.SENDGRID_KEY);
+//console.log("Email From:", process.env.EMAIL_FROM);
 
 sgMail.setApiKey(process.env.SENDGRID_KEY);
 
