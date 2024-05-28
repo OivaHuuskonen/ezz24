@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import Jumbotron from "../components/cards/Jumbotron";
 import axios from "axios";
 import ProductCard from "../components/cards/ProductCard";
+import { IoMusicalNoteOutline } from "react-icons/io5";
+import { IoMusicalNotesOutline } from "react-icons/io5";
+import { GiMusicalNotes } from "react-icons/gi";
+import { IoIosMusicalNote } from "react-icons/io";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -60,7 +64,7 @@ export default function Home() {
 
           <div className="col-md-12">
             <h2 className="p-3 mt-2 mb-2 h4 bg-light text-center">
-              Some best sellers
+            <IoMusicalNoteOutline /> <GiMusicalNotes /> Some best sellers <IoIosMusicalNote /> <IoMusicalNotesOutline />
             </h2>
             <div className="row">
               {sortedBySold?.map((p) => (
