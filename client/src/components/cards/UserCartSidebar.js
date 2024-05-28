@@ -55,7 +55,7 @@ export default function UserCartSidebar() {
 
   const getClientToken = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/braintree/token", {
+      const { data } = await axios.get("/braintree/token", {
         headers: {
           Authorization: `Bearer ${auth?.token}`
         }
@@ -64,6 +64,16 @@ export default function UserCartSidebar() {
     } catch (err) {
       console.log(err);
     }
+    /*try {
+      const { data } = await axios.get("http://localhost:8000/api/braintree/token", {
+        headers: {
+          Authorization: `Bearer ${auth?.token}`
+        }
+      });
+      setClientToken(data.clientToken);
+    } catch (err) {
+      console.log(err);
+    }*/
   };
   
   const cartTotal = () => {

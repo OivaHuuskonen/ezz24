@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
     // axios config
   
  axios.defaults.baseURL = process.env.REACT_APP_API;
-axios.defaults.headers.common["Authorization"] = auth?.token;
+ axios.defaults.headers.common["Authorization"] = auth?.token;
      
   //Voit tarkistaa, että auth.token -tila päivitetään oikein AuthProvider -komponentissa 
   //lisäämällä console.log -lauseen sen arvon tarkastamiseksi. AuthProvider -komponentti vastaa tilan 

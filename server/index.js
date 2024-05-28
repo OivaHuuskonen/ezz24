@@ -21,6 +21,8 @@ if (!process.env.MONGO_URI) {
   process.exit(1);
 }
 
+mongoose.set('strictQuery', true); // tai false
+
 // DB Connection
 mongoose
   .connect(process.env.MONGO_URI)

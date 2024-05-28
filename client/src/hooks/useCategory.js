@@ -10,6 +10,17 @@ export default function useCategory() {
 
   const loadCategories = async () => {
     try {
+      const { data } = await axios.get("/categories");
+      setCategories(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  
+  return categories;
+
+  /*const loadCategories = async () => {
+    try {
       const { data } = await axios.get("http://localhost:8000/api/categories"); // ???
       setCategories(data);
     } catch (err) {
@@ -17,5 +28,5 @@ export default function useCategory() {
     }
   };
 
-  return categories;
+  return categories;*/
 }
