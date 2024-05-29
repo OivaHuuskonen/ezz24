@@ -9,6 +9,11 @@ export default function ProductCard({ p }) {
   // hooks
   const navigate = useNavigate();
 
+  // logaus: tarkasta mikä arvo on p._id
+  console.log("this p._id is:", p._id);
+
+
+
   return (
     <div className="card mb-3 hoverable">
       <Badge.Ribbon className="yeseva-one-regula" text={`${p?.sold} sold`} color="red">
