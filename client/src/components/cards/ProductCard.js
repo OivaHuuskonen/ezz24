@@ -10,7 +10,7 @@ export default function ProductCard({ p }) {
   const navigate = useNavigate();
 
   // logaus: tarkasta mikä arvo on p._id
-  console.log("this p._id is:", p._id);
+  //console.log("this p._id is:", p._id);
 
 
 

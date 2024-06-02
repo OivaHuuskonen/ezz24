@@ -15,7 +15,7 @@ export default function ProductCardHorizontal({ p, remove = false, onRemove }) {
     }
   };
 
-  console.log("ProductCardHorizontal props:", p, remove); // Debug
+  //console.log("ProductCardHorizontal props:", p, remove); // Debug
 
   return (
     <div className="card mb-3">

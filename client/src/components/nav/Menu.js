@@ -35,12 +35,12 @@ export default function Menu() {
       </li>
 
       <li className="nav-item dropdown">
-        <a
+        <button
           className="nav-link pointer dropdown-toggle"
           data-bs-toggle="dropdown"
         >
           CATEGORIES
-        </a>
+        </button>
 
         <ul
           className="dropdown-menu"
@@ -91,12 +91,12 @@ export default function Menu() {
         </>
       ) : (
         <li className="nav-item dropdown">
-          <a
+          <button
             className="nav-link pointer dropdown-toggle"
             data-bs-toggle="dropdown"
           >
             {auth?.user?.name?.toUpperCase()}
-          </a>
+          </button>
 
           <ul className="dropdown-menu">
             <li>
@@ -109,9 +109,9 @@ export default function Menu() {
             </li>
 
             <li className="nav-item pointer">
-              <a onClick={logout} className="nav-link">
+              <button onClick={logout} className="nav-link">
                 Logout
-              </a>
+              </button>
             </li>
           </ul>
         </li>
